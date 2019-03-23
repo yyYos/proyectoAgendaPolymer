@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="ids-formulario">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `ids-formulario`
+     * proyecto de agenda
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class IdsFormulario extends Polymer.Element {
+      static get is() { return 'ids-formulario'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'ids-formulario'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(IdsFormulario.is, IdsFormulario);
+  </script>
+</dom-module>
